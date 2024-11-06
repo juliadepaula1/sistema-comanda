@@ -1,0 +1,133 @@
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color:white ;
+}
+
+.btn-add {
+    background-color: #007BFF;
+    transition: all 0.1s;
+}
+.btn-add:hover {
+    background-color: #012955;
+}
+
+.btn-atualizar {
+    background-color: #00ad0e;
+    transition: all 0.1s;
+}
+
+.btn-atualizar:hover {
+    background-color: #007209;
+}
+
+.btn-remover {
+    background-color: #ad0000;
+    transition: all 0.1s;
+}
+
+.btn-remover:hover {
+    background-color: #570000;
+}
+
+.acoes-pedidos {
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column; /* Organiza os botões em uma coluna */
+    gap: 10px; /* Adiciona espaçamento entre os botões */
+}
+
+.acoes-pedido button {
+    margin-bottom: 5px; /* Pode ser removido agora que estamos usando gap */
+    padding: 5px;
+}
+
+#nao-existe {
+    color: #848484;
+    align-self: center;
+    justify-self: center;
+    margin: 15px 0;
+}
+
+.gerenciamento-pedidos {
+    background-color: #ffff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+
+}
+
+.titulo-gerenciamento {
+    font-size: 28px;
+    color: #555;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.subtitulo-pedidos {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.formulario {
+    margin:15px 0;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+
+}
+
+.formualrio input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pedidos {
+    margin-top: 30px;
+    display: grid;
+    position: relative;
+}
+
+#lista-pedidos {
+    list-style: none;
+    padding: 0;
+
+}
+
+
+#lista-pedidos li {
+    background-color: #e6e6e6 ;
+    padding: 10px;
+    border: 1 px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}

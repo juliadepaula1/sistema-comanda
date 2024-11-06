@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Júlia de Paula">
+        <title>Comanda de pedidos</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="gerenciamento-pedidos">
+                <h1 class="titulo-gerenciamento">Gerenciamento de Pedidos</h1>
+                <div class="formulario">
+                    <label for="produto">Produto</label>
+                    <input type="text" id="produto" placeholder="Nome do produto" required>
+
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" placeholder="Quantidade" required>
+                    
+                </div>
+                <button class="btn-add" onclick="adicionarPedido()">Adicionar</button>
+                <div class="pedidos">
+                    <h2 class="subtitulo-pedidos">Lista de pedidos</h2>
+                    <span id="nao-existe">Não existe pedidos!</span>
+                    <ul id="lista-pedidos">
+                        <!--Aqui será inserido os li via java script-->
+
+                        <li>
+                            <P><strong>ID:</strong>1</P>
+                            <P><strong>Produto:</strong>Coca-cola</P>
+                            <P><strong>Quantidade:</strong>  2</P>
+                            <P><strong>Status:</strong>Em preparo</P>
+                            <div class="acoes-pedidos">
+                                <button class="btn-atualizar">Em preparo</button>
+                                <button class="btn-atualizar">Em andamento</button>
+                                <button class="btn-remover">Remover</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
