@@ -5,11 +5,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #e4e4e4;
+    overflow-y: auto; /**Permite barra de rolagem na vertical */
 }
 
 button {
@@ -101,10 +102,11 @@ button {
     display: block;
     margin-bottom: 5px;
     color: #555;
+    
 
 }
 
-.formualrio input {
+.formulario input {
     width: calc(100% - 22px);
     padding: 10px;
     border: 1px solid #ddd;
