@@ -1,3 +1,5 @@
+let spanRemovido = null;
+
 class Pedido {
     constructor(id, produto, quantidade, status ='Pendente'){
         this.id = id
@@ -51,8 +53,29 @@ function adicionarPedido(){
         restaurante.adicionarPedido(produto, quantidade);
         document.getElementById("produto").value="";
         document.getElementById("quantidade").value=""; //*isso aqui é para zerar o campo**/
+
+        atualizarMensagem();
     } else {
         alert('Por favor, preencha todos os campos!')
     }
 }
+
+function atualizarMensagem() {
+    const lista = document.getElementById("lista-pedidos");
+
+    if(lista.children.length === 0) {
+        if  (spanRemovido) {
+            document.querySelector(".lista-pedidos").insertBefore(spanRemovido, document.querySelector(".lista-pedidos").firstChild);
+        spanRemovido = null;
+        }
+    } else {
+        let mensagemNaoExiste = document.getElementById("nao-existe");
+        if(mensagemNaoExiste) {
+            spanRemovido = mensagemNaoExiste;
+            mensagemNaoExiste.remove();
+        }
+    }
+}
+
+
 
