@@ -9,12 +9,18 @@ class Pedido {
 
 class Restaurante {
     constructor() {
-        this.listaPedidos = [];
+        this.pedidos = [];
         this.idAtual = 1;
     }
 
     adicionarPedido(produto, quantidade){
         const pedido = new Pedido(this.idAtual++, produto, quantidade);
+    this.pedidos.push(pedido);
+    this.montarElementoProduto();
+    }
+
+    montarElementoProduto(){
+        const listaPedidos = document.getElementById("lista-pedidos");
     }
 }
 
