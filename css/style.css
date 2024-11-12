@@ -64,9 +64,13 @@ button {
 
 #nao-existe {
     color: #848484;
-    align-self: center;
-    justify-self: center;
-    margin: 15px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.lista-pedidos #nao-existe {
+    color: #848484;
 }
 
 .gerenciamento-pedidos {
